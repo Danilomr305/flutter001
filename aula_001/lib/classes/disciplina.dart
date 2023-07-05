@@ -5,4 +5,14 @@ class Diciplina {
   Professor professor;
   double nota;
   double frequencia; 
+  
+  Diciplina({
+    required this.nome,
+    required this.professor,
+    required this.nota,
+    required this.frequencia
+
+
+  });
+
 }
