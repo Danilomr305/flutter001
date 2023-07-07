@@ -10,8 +10,8 @@ void main() {
         ),
         body: const Center(
           child: Image(
-            image: NetworkImage(
-              'https://s2-techtudo.glbimg.com/1o2J-rf2G9qtlQlm82gaq-mFBec=/0x129:1024x952/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/7/i/ME2AxRRoygUyFPCDe0jQ/3.png'
+            image: AssetImage(
+              'imagens/rubi.png'
             ),
           ),
         ),
