@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: Scaffold(backgroundColor: Colors.black,),)
+    MaterialApp(
+      home: Scaffold
+      (
+        backgroundColor: Colors.indigoAccent,
+        appBar: AppBar(backgroundColor: Colors.brown,
+        title:const Text('Eu Sou Programador'),
+        ),
+      ),
+    ),
   );
 }
