@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp();
+  runApp(
+      MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.deepOrange,
+        body: Container()
+      ),
+    ),
+  );
 }
 
