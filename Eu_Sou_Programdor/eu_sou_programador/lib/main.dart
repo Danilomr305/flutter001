@@ -6,10 +6,14 @@ void main() {
       home: Scaffold
       (
         backgroundColor: Colors.indigoAccent,
-        appBar: AppBar(backgroundColor: Colors.brown,
+        appBar: AppBar(backgroundColor: Colors.blue,
         title:const Text('Eu Sou Programador'),
         ),
       ),
     ),
   );
 }
+
+
+
+
