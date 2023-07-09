@@ -8,6 +8,7 @@ void main() {
 
 class MeuApp extends StatelessWidget {
   const MeuApp({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -15,29 +16,29 @@ class MeuApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.deepOrange,
         body: SafeArea(
-          child: Column(
-            Verti
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-            Container(
+              Container(
               height: 100.0,
-              width: 100.0,
               color: Colors.white,
               child: const Text('Container 1'),
              ),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.blue,
-              child: const Text('Container 2')
+             const SizedBox(
+              width: 20.0
+              ),
+              Container(
+                height: 100.0,
+                color: Colors.blue,
+                child: const Text('Container 2')
             ),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.red,
-              child: const Text('Container 3')
+              Container(
+                height: 100.0,
+                color: Colors.red,
+                child: const Text('Container 3')
             ),
            ],
-          )
+          ),
         )
       ),
     );
