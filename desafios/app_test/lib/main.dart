@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MeuApp()
+    const MeuApp()
   );
 }
 class MeuApp extends StatelessWidget {
@@ -10,6 +10,22 @@ class MeuApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.amberAccent,
+       body: SafeArea(
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              height: 17.0,
+              width: 50.0,
+              color: Colors.grey,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
