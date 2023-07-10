@@ -16,7 +16,10 @@ class MeuApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.deepOrange,
         body: SafeArea(
-          child: Column(children: <Widget>[CircleAvatar()],),
+          child: Column(children: <Widget>[CircleAvatar()
+          
+            ],
+          ),
         ),
       ),
     );
