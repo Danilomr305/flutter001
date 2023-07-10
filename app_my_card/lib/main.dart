@@ -15,7 +15,7 @@ class MeuApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.deepOrange,
-        body: SafeArea( 
+        body: SafeArea(
           child: Column(children: <Widget>[CircleAvatar(
             radius: 50.0,
           )
