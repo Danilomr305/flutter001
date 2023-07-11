@@ -19,10 +19,17 @@ class MeuApp extends StatelessWidget {
           child: Column(children: <Widget>[
             CircleAvatar(
               backgroundColor: Colors.blue,
-              backgroundImage: AssetImage('imagens/idoso.jpg'),
+              backgroundImage: AssetImage('imagens/perfil.jpg'),
               
             
               radius: 50.0,
+              ),
+              Text('Danilo Martins', style: TextStyle(
+                fontSize: 40.0,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Pacifico'
+                ),
               ),
             ],
           ),
