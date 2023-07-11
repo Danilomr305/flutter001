@@ -32,7 +32,7 @@ class MeuApp extends StatelessWidget {
               Text(
                 'DESENVOLVEDOR fLUTTER',
               style: TextStyle(
-                fontFamily: 'Source Code Pro'
+                fontFamily: 'Pacifico'
               ),
               ),
             ],
