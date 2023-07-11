@@ -19,6 +19,7 @@ class MeuApp extends StatelessWidget {
           child: Column(children: <Widget>[
             CircleAvatar(
               backgroundColor: Colors.teal,
+              
               radius: 50.0,
               ),
             ],
