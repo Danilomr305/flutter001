@@ -20,8 +20,6 @@ class MeuApp extends StatelessWidget {
             CircleAvatar(
               backgroundColor: Colors.blue,
               backgroundImage: AssetImage('imagens/perfil.jpg'),
-              
-            
               radius: 50.0,
               ),
               Text('Danilo Martins', style: TextStyle(
@@ -32,9 +30,10 @@ class MeuApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'DESENVOLVEDOR FLUTTER',
-              style: TextStyle(fontFamily: 'Source Code Pro',
-                ),
+                'DESENVOLVEDOR fLUTTER',
+              style: TextStyle(
+                fontFamily: 'Source Code Pro'
+              ),
               ),
             ],
           ),
