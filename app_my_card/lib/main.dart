@@ -16,7 +16,7 @@ class MeuApp extends StatelessWidget {
           child: Column(
             children: <Widget>[
             CircleAvatar(
-              backgroundImage: AssetImage('imagens/perfil.jpg'), 
+              backgroundImage: AssetImage('imagens/perfil.jpg'),
               radius: 50.0,
               ),
               Text(
