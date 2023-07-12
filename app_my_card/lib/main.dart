@@ -33,7 +33,7 @@ class MeuApp extends StatelessWidget {
                 'DESENVOLVEDOR fLUTTER',
                style: TextStyle(
                  color: Colors.white,
-                 fontSize: 20.0, 
+                 fontSize: 20.0,
                  letterSpacing: 2.5,
                  fontWeight: FontWeight.bold,
                 ),
