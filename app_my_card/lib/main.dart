@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_unnecessary_containers
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,16 +8,16 @@ void main() {
 
 class MeuApp extends StatelessWidget {
   const MeuApp({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.deepOrange,
         body: SafeArea(
-          child: Column(children: <Widget>[
+          child: Column(
+            children: <Widget>[
             CircleAvatar(
-              backgroundColor: Colors.blue,
               backgroundImage: AssetImage('imagens/perfil.jpg'),
               radius: 50.0,
               ),
@@ -38,26 +36,6 @@ class MeuApp extends StatelessWidget {
                  letterSpacing: 2.5,
                  fontWeight: FontWeight.bold,
                 ),
-              ),
-                Row(
-                 children: <Widget>[
-                   Icon(
-                     Icons.phone,
-                     size: 25.0,
-                     color: Colors.white,
-                 ),
-                 SizedBox(
-                   width: 10.0,
-                 ),
-                 Text(
-                   '+55 86 98765-4321',
-                   style: TextStyle(
-                     color: Colors.white,
-                     fontFamily: 'Pacifico',
-                     fontSize: 25.0,
-                    ),
-                  ),
-                ],
               ),
             ],
           ),
