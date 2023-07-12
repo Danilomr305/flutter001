@@ -22,7 +22,7 @@ class MeuApp extends StatelessWidget {
               Text(
                 'Danilo Martins', 
                 style: TextStyle(
-                fontSize: 40.0, 
+                fontSize: 40.0,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Pacifico'
