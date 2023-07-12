@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MeuApp(),
+     MeuApp(),
   );
 }
-
+// ignore: use_key_in_widget_constructors
 class MeuApp extends StatelessWidget {
-  const MeuApp({super.key});
-  
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -28,18 +26,22 @@ class MeuApp extends StatelessWidget {
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Pacifico'
-                ),
               ),
-              Text(
-                'DESENVOLVEDOR fLUTTER',
-               style: TextStyle(
-                 color: Colors.white,
-                 fontSize: 20.0,
-                 letterSpacing: 2.5,
-                 fontWeight: FontWeight.bold,
-                ),
+            ),
+            Text(
+              'DESENVOLVEDOR fLUTTER',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20.0,
+                letterSpacing: 2.5,
+                fontWeight: FontWeight.bold,
               ),
-              Container(child: Row(),),
+            ),
+            Container(
+              child: Row(
+                children: <Widget>[Icon(Icons.phone)],
+              ),
+              ),
             ],
           ),
         ),
