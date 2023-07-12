@@ -21,7 +21,9 @@ class MeuApp extends StatelessWidget {
               backgroundImage: AssetImage('imagens/perfil.jpg'),
               radius: 50.0,
               ),
-              Text('Danilo Martins', style: TextStyle(
+              Text(
+                'Danilo Martins', 
+                style: TextStyle(
                 fontSize: 40.0,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -37,6 +39,7 @@ class MeuApp extends StatelessWidget {
                  fontWeight: FontWeight.bold,
                 ),
               ),
+              Container(child: Row(),),
             ],
           ),
         ),
