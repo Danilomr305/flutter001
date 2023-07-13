@@ -39,7 +39,7 @@ class MeuApp extends StatelessWidget {
             ), 
            
             Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              textDirection: TextDirection.ltr,
               children: <Widget>[
                 Icon(
                   Icons.phone,
