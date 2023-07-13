@@ -46,7 +46,7 @@ class MeuApp extends StatelessWidget {
                Padding(
                  padding: EdgeInsets.all(20.0),
                  child: Row(
-                    children: Card[
+                    children: <Widget>[
                       SizedBox(
                         width: 55.0,
                       ),
