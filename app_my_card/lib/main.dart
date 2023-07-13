@@ -35,11 +35,12 @@ class MeuApp extends StatelessWidget {
                 fontSize: 20.0,
                 letterSpacing: 2.5, 
                 fontWeight: FontWeight.bold,
-              ),
+              ), 
             ), 
+           
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                
                 Icon(
                   Icons.phone,
                   size: 35.0,
