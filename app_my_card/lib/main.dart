@@ -28,16 +28,55 @@ class MeuApp extends StatelessWidget {
                   fontFamily: 'Pacifico'
                 ),
               ),
-              Text(
-                'DESENVOLVEDOR fLUTTER',
-                style: TextStyle(
+                Text(
+                  'DESENVOLVEDOR fLUTTER',
+                  style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
                   letterSpacing: 2.5, 
                   fontWeight: FontWeight.bold,
                 ), 
               ), 
-              
+              Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.phone,
+                    size: 35.0,
+                    color: Colors.white,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    '+55 98872-2093',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Pacifico',
+                      fontSize: 28.0,
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.mail_outline,
+                    size: 35.0,
+                    color: Colors.white,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    'danilo305@gmail.com',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Pacifico',
+                      fontSize: 28.0,
+                    ),
+                  )
+                ],
+              ),
               ],
             ),
         ),
