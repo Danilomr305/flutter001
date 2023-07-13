@@ -2,11 +2,17 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-     MeuApp(),
+     const MeuApp(),
   );
 }
 
 class MeuApp extends StatelessWidget {
+  
+
+  const MeuApp({super.key});
+  
+  
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -37,46 +43,56 @@ class MeuApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ), 
               ), 
-              Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    size: 35.0,
-                    color: Colors.white,
+               Padding(
+                 padding: EdgeInsets.all(20.0),
+                 child: Row(
+                    children: Card[
+                      SizedBox(
+                        width: 55.0,
+                      ),
+                      Icon(
+                        Icons.phone,
+                        size: 35.0,
+                        color: Colors.white,
+                        weight: 40.0,
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        '+55 98872-2093',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Pacifico',
+                          fontSize: 28.0,
+                        ),
+                      )
+                    ],
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '+55 98872-2093',
-                    style: TextStyle(
+               ),
+                Row(
+                  children: <Widget>[
+                    SizedBox(
+                      width:55.0),
+                    Icon(
+                      Icons.mail_outline,
+                      size: 35.0,
                       color: Colors.white,
-                      fontFamily: 'Pacifico',
-                      fontSize: 28.0,
                     ),
-                  )
-                ],
-              ),
-              Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.mail_outline,
-                    size: 35.0,
-                    color: Colors.white,
-                  ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    'danilo305@gmail.com',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Pacifico',
-                      fontSize: 28.0,
+                    SizedBox(
+                      width: 10.0,
                     ),
-                  )
-                ],
-              ),
+                    Text(
+                      'danilo305@gmail.com',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Pacifico',
+                        fontSize: 28.0,
+                      ),
+                    )
+                  ],
+                ),
+              
               ],
             ),
         ),
