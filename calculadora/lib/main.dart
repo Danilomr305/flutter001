@@ -16,6 +16,20 @@ class Calculadora extends StatelessWidget {
         backgroundColor: Colors.black12,
         appBar: AppBar(
           backgroundColor: Colors.blueGrey,
+          title:const Text('Calculadora'),
+        ),
+        body: SafeArea(child:
+         Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              height: 100.0,
+              width: 100.0,
+              color: Colors.white,
+              child: const Text('Visor'),
+            ),
+            ],
+          ),
         ),
       ),
     );
