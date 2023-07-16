@@ -20,18 +20,16 @@ class Calculadora extends StatelessWidget {
           title:const Text('Calculadora'),
         ),
         body:const SafeArea(
-          child: Column(
+          child: Row(
             children: <Widget>[
-              Text(
-                'Visor',
-                style: TextStyle(
-                  fontSize: 30.0,
-                  color: Colors.white,
-                ),
+              Column(
+                  children: [
+                    Container(),
+                    ],
               ),
             ],
-          ),
         ),
+      ),
       ),
     );
   }
