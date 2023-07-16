@@ -21,7 +21,12 @@ class Calculadora extends StatelessWidget {
         ),
         body:const SafeArea(
           child: Column(
-              
+            children: <Widget>[
+              Text(
+                'Visor'
+                
+              ),
+            ],
           ),
         ),
       ),
