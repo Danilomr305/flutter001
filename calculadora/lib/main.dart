@@ -7,6 +7,7 @@ void main() {
 }
 
 class Calculadora extends StatelessWidget {
+
   const Calculadora({super.key});
 
   @override
@@ -37,18 +38,7 @@ class Calculadora extends StatelessWidget {
                 ),  
               ),
             ],
-          ),
-          
-         child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-            Container( 
-              height: 50.0,
-              width: 50.0,
-              color: Colors.blue,
-            ),
-          ],
-          ),  
+          )
         ),
       ),
     );
