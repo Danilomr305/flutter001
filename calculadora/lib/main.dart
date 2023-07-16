@@ -12,20 +12,9 @@ class Calculadora extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.black12,
-        appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
-          title:const Text('Calculadora'),
-        ),
-        body:const SafeArea(
-          child: Column(
-            children: <Widget>[
-              
-            ],
-          ),
-        ),
+        
       ),
     );
   }
