@@ -23,8 +23,11 @@ class Calculadora extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Text(
-                'Visor'
-                
+                'Visor',
+                style: TextStyle(
+                  fontSize: 30.0,
+                  color: Colors.white,
+                ),
               ),
             ],
           ),
