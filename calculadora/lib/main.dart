@@ -48,7 +48,7 @@ class Calculadora extends StatelessWidget {
               color: Colors.blue,
             ),
           ],
-          ),
+          ), 
         ),
       ),
     );
