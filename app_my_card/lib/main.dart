@@ -13,7 +13,7 @@ void main() {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.blue,
         body: Container(),
       ),
     );
