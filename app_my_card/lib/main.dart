@@ -19,6 +19,7 @@ void main() {
         backgroundColor: Colors.blue,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
                CircleAvatar(
                 backgroundImage: AssetImage('imagens/perfil.jpg'),
@@ -41,6 +42,13 @@ void main() {
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.w900,
                 ),
+              ),
+              SizedBox(
+                height: 30.0,
+                width: 250.0,
+               child: Divider(
+                color: Colors.white,
+               ),
               ),
              // ignore: avoid_unnecessary_containers
               Card(
