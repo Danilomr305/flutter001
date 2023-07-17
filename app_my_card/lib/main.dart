@@ -14,17 +14,17 @@ void main() {
   get mainAxisSize => null;
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return  const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
           child: Column(
             children: <Widget>[
-               const CircleAvatar(
+               CircleAvatar(
                 backgroundImage: AssetImage('imagens/perfil.jpg'),
                 radius: 60.0,
               ),
-               const Text(
+               Text(
                 'Danilo Martins',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
@@ -33,7 +33,7 @@ void main() {
                   fontWeight: FontWeight.w900,
                 ),
               ),
-              const Text(
+              Text(
                 'DESENVOLVEDOR FLUTTER',
                 style: TextStyle(
                   color: Colors.black,
@@ -43,57 +43,61 @@ void main() {
                 ),
               ),
              // ignore: avoid_unnecessary_containers
-              Container(
+              Card(
                 color: Colors.white,
-                margin: const EdgeInsets.symmetric(
+                margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                padding: const EdgeInsets.all(10.0),
-               child:  const Row(
-                 children: <Widget>[
-                    Icon(Icons.phone,
-                    size: 25.0,
-                    color: Colors.blue,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('+55 1234-2345',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontFamily: 'Pacifico',
-                        fontSize: 20.0
+                child:  Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                   children: <Widget>[
+                      Icon(Icons.phone,
+                      size: 25.0,
+                      color: Colors.blue,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text('+55 1234-2345',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontFamily: 'Pacifico',
+                          fontSize: 20.0
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                margin: const EdgeInsets.symmetric(
+                margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                padding: const EdgeInsets.all(10.0),
-               child:  const Row(
-                 children: <Widget>[
-                    Icon(Icons.mail,
-                    size: 25.0,
-                    color: Colors.blue,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('@danilomr305@gmail.com',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontFamily: 'Pacifico',
-                        fontSize: 20.0
+               child:  Padding(
+                 padding: EdgeInsets.all(10.0),
+                 child: Row(
+                   children: <Widget>[
+                      Icon(Icons.mail,
+                      size: 25.0,
+                      color: Colors.blue,
                       ),
-                    ),
-                  ],
-                ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text('@danilomr305@gmail.com',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontFamily: 'Pacifico',
+                          fontSize: 20.0
+                        ),
+                      ),
+                    ],
+                  ),
+               ),
               ),
             ],
           ),
