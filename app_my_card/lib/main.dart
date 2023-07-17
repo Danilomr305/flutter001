@@ -49,23 +49,20 @@ void main() {
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                  child: Row(
-                   children: <Widget>[
+                  child: ListTile(
+                   leading:
                       Icon(Icons.phone,
                       size: 25.0,
                       color: Colors.blue,
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text('+55 1234-2345',
+                      
+                  title:    Text('+55 1234-2345',
                         style: TextStyle(
                           color: Colors.blue,
                           fontFamily: 'Pacifico',
                           fontSize: 20.0
                         ),
                       ),
-                    ],
                   ),
               ),
               Card(
@@ -74,23 +71,21 @@ void main() {
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                 child: Row(
-                   children: <Widget>[
+                 child:ListTile(
+                   leading: 
                       Icon(Icons.mail,
                       size: 25.0,
                       color: Colors.blue,
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text('@danilomr305@gmail.com',
+                    
+                title:Text('@danilomr305@gmail.com',
                         style: TextStyle(
                           color: Colors.blue,
                           fontFamily: 'Pacifico',
                           fontSize: 20.0
                         ),
                       ),
-                    ],
+                    
                   ),
                ),
             ],
