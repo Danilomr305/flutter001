@@ -83,7 +83,7 @@ void main() {
                     color: Colors.blue,
                     ),
                     SizedBox(
-                      width: 10.0,
+                      width: 10.0, 
                     ),
                     Text('@danilomr305@gmail.com',
                       style: TextStyle(
