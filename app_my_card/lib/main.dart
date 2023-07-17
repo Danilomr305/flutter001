@@ -49,8 +49,6 @@ void main() {
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                child:  Padding(
-                  padding: EdgeInsets.all(10.0),
                   child: Row(
                    children: <Widget>[
                       Icon(Icons.phone,
@@ -69,7 +67,6 @@ void main() {
                       ),
                     ],
                   ),
-                ),
               ),
               Card(
                 color: Colors.white,
@@ -77,8 +74,6 @@ void main() {
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-               child:  Padding(
-                 padding: EdgeInsets.all(10.0),
                  child: Row(
                    children: <Widget>[
                       Icon(Icons.mail,
@@ -98,7 +93,6 @@ void main() {
                     ],
                   ),
                ),
-              ),
             ],
           ),
         ),
