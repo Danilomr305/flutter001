@@ -69,7 +69,7 @@ void main() {
                   ),
               ),
               Card(
-                color: Colors.white,
+                color: Colors.white, 
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
