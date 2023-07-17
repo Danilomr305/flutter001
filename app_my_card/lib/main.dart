@@ -44,7 +44,6 @@ void main() {
               ),
              // ignore: avoid_unnecessary_containers
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
@@ -66,7 +65,6 @@ void main() {
                   ),
               ),
               Card(
-                color: Colors.white, 
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
