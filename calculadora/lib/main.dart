@@ -4,7 +4,7 @@ void main() {
   // ignore: unnecessary_new
   runApp(new MaterialApp(
     title: "Materal Calculadora",
-   
+    
     home: new Scaffold(
       appBar: new AppBar(actions: 
       title: new Text('CAlculadora'),
