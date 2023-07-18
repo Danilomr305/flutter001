@@ -40,49 +40,267 @@ class Calculadora extends StatelessWidget {
                   ),
                 ),
               ),
-              const Card(
-                margin: EdgeInsets.symmetric(
-                  vertical: 10.0,
-                  horizontal: 25.0,
-                ),
-                  child: ListTile(
-                   leading:
-                      Icon(Icons.phone,
-                      size: 25.0,
-                      color: Colors.blue,
-                      ),
-                      
-                  title:    Text('+55 1234-2345',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontFamily: 'Pacifico',
-                          fontSize: 20.0
-                        ),
-                      ),
+              // linha 1
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {},
+                    // ignore: sort_child_properties_last
+                    child:const Text('C',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      )
+                    ),
                   ),
-                ),
-              const Card(
-                margin: EdgeInsets.symmetric(
-                  vertical: 10.0,
-                  horizontal: 25.0,
-                ),
-                  child: ListTile(
-                   leading:
-                      Icon(Icons.phone,
-                      size: 25.0,
-                      color: Colors.blue,
-                      ),
-                      
-                  title:    Text('+55 1234-2345',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontFamily: 'Pacifico',
-                          fontSize: 20.0
-                        ),
-                      ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
                   ),
-                ),
-              // ignore: avoid_unnecessary_containers
+                  ElevatedButton(
+                    onPressed: () {},
+                    child:const Text('DEL',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                    
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('%',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('/',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                  ),
+                ],
+              ),
+              // linha 2
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 15.0,
+                        vertical: 15.0
+                      )
+                    ),
+                    child:const Text('7',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child:const Text('8',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                    
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('9',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('*',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                  ),
+                ],
+              ),
+              //Linha 3
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {},
+                    child:const Text('4',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child:const Text('5',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),
+                    ),
+                    
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('6',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('+',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),
+                    ),
+                  ),
+                ],
+              ),
+              // Linha 4
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {},
+                    child:const Text('1',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child:const Text('2',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),
+                    ),
+                    
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('3',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('-',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),
+                    ),
+                  ),
+                ],
+              ),
+              //Linha 5
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {},
+                    child:const Text('0',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25
+                    ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 15.0,
+                        vertical: 15.0
+                      )
+                    ),
+                    child:const Text('.',
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.black
+
+                    ),
+                    ),
+                    
+                  ),
+                ],
+              ),
             ],
             ),
           ),
