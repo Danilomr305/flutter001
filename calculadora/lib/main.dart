@@ -288,7 +288,8 @@ class Calculadora extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                         horizontal: 15.0,
                         vertical: 15.0
-                      )
+                      ),
+                       
                     ),
                     child:const Text('.',
                     style: TextStyle(
