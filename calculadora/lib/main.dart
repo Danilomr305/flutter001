@@ -17,18 +17,19 @@ class Calculadora extends StatelessWidget {
         backgroundColor: Colors.blue,
         body: SafeArea(
           child: Container(
-            margin: const EdgeInsets.all(20.0),
-            padding: const EdgeInsets.all(20.0),
-            height: 100.0,
-            width: 100.0,
-            color: Colors.white,
-            child: const Text('Visor',
-            style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.w900),),
+              margin: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(20.0),
+              height: 140.0,
+              width: 400.0,
+              color: Colors.white,
+              child: const Text('Visor',
+              style: TextStyle(
+                fontSize: 50.0,
+                fontWeight: FontWeight.w900),
+                ),
+            ),
           ),
         ),
-      ),
     );
   }
 }
