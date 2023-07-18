@@ -21,10 +21,12 @@ class Calculadora extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             height: 100.0,
             width: 100.0,
-            color: Colors.brown,
-            child: const Text('Olá Pessoal!!'),
+            color: Colors.white,
+            child: const Text('Visor',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.w900),),
           ),
-          
         ),
       ),
     );
