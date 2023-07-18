@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    const Calculadora()
+  // ignore: unnecessary_new
+  runApp(new MaterialApp(
+    title: "Materal Calculadora",
+   
+    home: new Scaffold(
+      appBar: new AppBar(actions: 
+      title: new Text('CAlculadora'),
+      ),
+    ),
+
+
+    ),
   );
 }
 
@@ -14,7 +24,7 @@ class Calculadora extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blue,
-        appBar: AppBar(
+         appBar: AppBar(
           backgroundColor: Colors.black,
           title:const Text('Calculadora'
           ),
@@ -40,13 +50,6 @@ class Calculadora extends StatelessWidget {
                 ),
               ),
               // ignore: avoid_unnecessary_containers
-              Container(
-                child: const Column(
-                  children: [
-                    
-                  ],
-                ),
-              ),
             ],
             ),
           ),
