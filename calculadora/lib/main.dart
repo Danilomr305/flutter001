@@ -2,17 +2,9 @@ import 'package:flutter/material.dart';
 
 void main() {
   // ignore: unnecessary_new
-  runApp(new MaterialApp(
-    title: "Materal Calculadora",
+  runApp(
+    const Calculadora()
     
-    home: new Scaffold(
-      appBar: new AppBar(actions: 
-      title: new Text('CAlculadora'),
-      ), 
-    ),
-
-
-    ),
   );
 }
 
@@ -32,7 +24,6 @@ class Calculadora extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              // ignore: avoid_unnecessary_containers, sized_box_for_whitespace
               Container(
                 margin: const EdgeInsets.all(15.0),
                 height: 140.0,
@@ -49,6 +40,48 @@ class Calculadora extends StatelessWidget {
                   ),
                 ),
               ),
+              const Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                  child: ListTile(
+                   leading:
+                      Icon(Icons.phone,
+                      size: 25.0,
+                      color: Colors.blue,
+                      ),
+                      
+                  title:    Text('+55 1234-2345',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontFamily: 'Pacifico',
+                          fontSize: 20.0
+                        ),
+                      ),
+                  ),
+                ),
+              const Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                  child: ListTile(
+                   leading:
+                      Icon(Icons.phone,
+                      size: 25.0,
+                      color: Colors.blue,
+                      ),
+                      
+                  title:    Text('+55 1234-2345',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontFamily: 'Pacifico',
+                          fontSize: 20.0
+                        ),
+                      ),
+                  ),
+                ),
               // ignore: avoid_unnecessary_containers
             ],
             ),
