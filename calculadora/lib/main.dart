@@ -42,12 +42,8 @@ class Calculadora extends StatelessWidget {
               // ignore: avoid_unnecessary_containers
               Container(
                 child: const Column(
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[],
-                        
-                      
-                    ),
+                  children: [
+                    Expanded(child: Arr)
                   ],
                 ),
               ),
