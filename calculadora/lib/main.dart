@@ -43,7 +43,7 @@ class Calculadora extends StatelessWidget {
               Container(
                 child: const Column(
                   children: [
-                    Expanded(child: 
+                    Expanded(
                   ],
                 ),
               ),
