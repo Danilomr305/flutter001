@@ -70,7 +70,7 @@ class Calculadora extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo[100],
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 25.0, 
+                        horizontal: 20.0, 
                         vertical: 20.0
                       ),
                     ), 
