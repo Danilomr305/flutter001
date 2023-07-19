@@ -188,8 +188,8 @@ class Calculadora extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo[100],
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0,
-                        vertical: 15.0
+                        horizontal: 35.0,
+                        vertical: 20.0
                       ),
                     ),
                     child: const Text('*',
