@@ -49,8 +49,8 @@ class Calculadora extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo[100],
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0,
-                        vertical: 15.0
+                        horizontal: 35.0,
+                        vertical: 20.0
                       ),
                     ),
                     // ignore: sort_child_properties_last
@@ -70,8 +70,8 @@ class Calculadora extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo[100],
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0,
-                        vertical: 15.0
+                        horizontal: 25.0,
+                        vertical: 20.0
                       ),
                     ),
                     child:const Text('DEL',
@@ -90,8 +90,8 @@ class Calculadora extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo[100],
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0,
-                        vertical: 15.0
+                        horizontal: 35.0,
+                        vertical: 20.0
                       ),
                     ),
                     child: const Text('%',
@@ -109,8 +109,8 @@ class Calculadora extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo[100],
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0,
-                        vertical: 15.0
+                        horizontal: 35.0,
+                        vertical: 20.0
                       ),
                     ),
                     child: const Text('/',
@@ -130,8 +130,8 @@ class Calculadora extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo[100],
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0,
-                        vertical: 15.0
+                        horizontal: 35.0,
+                        vertical: 20.0
                       ),
                     ),
                     child:const Text('7',
