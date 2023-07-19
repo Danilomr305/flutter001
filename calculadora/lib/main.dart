@@ -75,7 +75,7 @@ class Calculadora extends StatelessWidget {
                       ),
                     ), 
                     child:const Text('DEL',
-                    style: TextStyle(
+                    style: TextStyle( 
                       color: Colors.black,
                       fontSize: 25
                     ),), 
