@@ -2,12 +2,20 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp( 
-    const MeuApp()
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Dados'),
+          backgroundColor: Colors.teal.shade900,
+        ),
+        body: const Dados(),
+      ),
+    ),
   );
 }
 
-class MeuApp extends StatelessWidget {
-  const MeuApp({super.key});
+class Dados extends StatelessWidget {
+  const Dados({super.key});
 
   @override
   Widget build(BuildContext context) {
