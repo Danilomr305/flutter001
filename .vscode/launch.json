@@ -1,0 +1,189 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "app_jogo_dado",
+            "cwd": "app_jogo_dado",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "app_jogo_dado (profile mode)",
+            "cwd": "app_jogo_dado",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "app_jogo_dado (release mode)",
+            "cwd": "app_jogo_dado",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "app_my_card",
+            "cwd": "app_my_card",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "app_my_card (profile mode)",
+            "cwd": "app_my_card",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "app_my_card (release mode)",
+            "cwd": "app_my_card",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "app_teste1",
+            "cwd": "app_teste1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "app_teste1 (profile mode)",
+            "cwd": "app_teste1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "app_teste1 (release mode)",
+            "cwd": "app_teste1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "aula_001",
+            "cwd": "aula_001",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "aula_001 (profile mode)",
+            "cwd": "aula_001",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "aula_001 (release mode)",
+            "cwd": "aula_001",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "aula_002",
+            "cwd": "aula_002",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "aula_002 (profile mode)",
+            "cwd": "aula_002",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "aula_002 (release mode)",
+            "cwd": "aula_002",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "calculadora",
+            "cwd": "calculadora",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "calculadora (profile mode)",
+            "cwd": "calculadora",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "calculadora (release mode)",
+            "cwd": "calculadora",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "eu_sou_rico",
+            "cwd": "aula_001\\eu_sou_rico",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "eu_sou_rico (profile mode)",
+            "cwd": "aula_001\\eu_sou_rico",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "eu_sou_rico (release mode)",
+            "cwd": "aula_001\\eu_sou_rico",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "app_test",
+            "cwd": "desafios\\app_test",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "app_test (profile mode)",
+            "cwd": "desafios\\app_test",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "app_test (release mode)",
+            "cwd": "desafios\\app_test",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "eu_sou_programador",
+            "cwd": "Eu_Sou_Programdor\\eu_sou_programador",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "eu_sou_programador (profile mode)",
+            "cwd": "Eu_Sou_Programdor\\eu_sou_programador",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "eu_sou_programador (release mode)",
+            "cwd": "Eu_Sou_Programdor\\eu_sou_programador",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
