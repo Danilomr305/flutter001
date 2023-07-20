@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp (
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Dados'),
+          backgroundColor: Colors.teal.shade900,
+        ),
+        body: const Dados(),
+      ),
+     
+    ),
+  );
 }
 
 class Dados extends StatelessWidget {
@@ -9,6 +20,6 @@ class Dados extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container();
   }
 }
