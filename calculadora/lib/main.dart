@@ -25,7 +25,9 @@ class Calculadora extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Container(
-                margin: const EdgeInsets.all(15.0),
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 15.0,
+                  vertical: 40.0),
                 height: 140.0,
                 width: 400.0,
                 color: Colors.white,
@@ -395,7 +397,7 @@ class Calculadora extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo[100 ],
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 30.0,
+                        horizontal: 34.0,
                         vertical: 20.0
                       ),
                        
