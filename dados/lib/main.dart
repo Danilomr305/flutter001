@@ -20,7 +20,7 @@ class Dadoos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Row(
+    return Row(
       children:[
       Expanded(
         child: Image.asset('imagens/dados1.png'),
