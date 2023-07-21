@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
+  return runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.teal.shade700,
+        appBar: AppBar(
+          title: const Text('Dadoos'),
+          backgroundColor: Colors.teal.shade900,
+        ),
+        body: const Dadoos(),
+      ),
+    ),
+  );
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class Dadoos extends StatelessWidget {
+  const Dadoos({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Danilo!'),
-        ),
-      ),
+    return Container(
+      
     );
   }
 }
