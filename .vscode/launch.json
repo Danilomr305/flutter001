@@ -4,7 +4,13 @@
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+
+         {
+            "name": "dados",
+            "cwd": "dados",
+            "request": "launch",
+            "type": "dart"
+        },
         {
             "name": "app_jogo_dado",
             "cwd": "app_jogo_dado",
