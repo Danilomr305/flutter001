@@ -17,6 +17,7 @@ void main() {
 
 class Dadoos extends StatelessWidget {
   const Dadoos({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -25,19 +26,19 @@ class Dadoos extends StatelessWidget {
       child: Row(
         children: [
             Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset('imagens/dado1.png'),
-              ),
+                child: TextButton(
+                  onPressed: () {  },
+                  child: Image.asset('imagens/dado1.png'),
+                ),
             ),
           
 
           Expanded(
-            child: Padding( 
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset('imagens/dado2.png'),
+              child: TextButton(
+                onPressed: () {  },
+                child: Image.asset('imagens/dado2.png'),
+              ),
             ),
-          ),
         ],
       ),
     );
