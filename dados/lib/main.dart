@@ -23,11 +23,10 @@ class Dadoos extends StatelessWidget {
     return Row(
       children:[
       Expanded(
+        flex: 1,
         child: Image.asset('imagens/dados1.png'),
       ), 
-      Expanded(
-        child: Image.asset('imagens/dados2.png'),
-      ),
+      
       ],
     );
   }
