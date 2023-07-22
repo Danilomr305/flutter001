@@ -27,7 +27,10 @@ class Dadoos extends StatelessWidget {
         children: [
             Expanded(
                 child: TextButton(
-                  onPressed: () {  },
+                  onPressed: () { 
+                    // ignore: avoid_print
+                    print('Botão esquerdo pressionada');
+                   },
                   child: Image.asset('imagens/dado1.png'),
                 ),
             ),
@@ -35,7 +38,10 @@ class Dadoos extends StatelessWidget {
 
           Expanded(
               child: TextButton(
-                onPressed: () {  },
+                onPressed: () {
+                  // ignore: avoid_print 
+                  print('Botão direito pressionado');
+                 },
                 child: Image.asset('imagens/dado2.png'),
               ),
             ),
