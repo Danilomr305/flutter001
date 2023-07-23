@@ -21,7 +21,8 @@ class Dadoos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   
+   var numeroDadoEsquerdo = 1;
+
     return  Center(
       child: Row(
         children: [
