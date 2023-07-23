@@ -33,7 +33,7 @@ class Dadoos extends StatelessWidget {
                    },
                   child: Image.asset('imagens/dado1.png'),
                 ),
-            ),
+            ), 
           
 
           Expanded( 
