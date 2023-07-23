@@ -26,7 +26,8 @@ class Dadoos extends StatelessWidget {
       child: Row(
         children: [
             Expanded( 
-              
+              child: TextButton(
+                  onPressed: () {
                     // ignore: avoid_print
                     print('Botão esquerdo pressionado'); 
                    },
