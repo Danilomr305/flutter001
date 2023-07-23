@@ -29,7 +29,7 @@ class Dadoos extends StatelessWidget {
                 child: TextButton(
                   onPressed: () { 
                     // ignore: avoid_print
-                    print('Botão esquerdo pressionado');
+                    print('Botão esquerdo pressionado'); 
                    },
                   child: Image.asset('imagens/dado1.png'),
                 ),
