@@ -17,7 +17,7 @@ void main() {
 
 class Dadoos extends StatelessWidget {
   const Dadoos({super.key});
-  
+  var
 
   @override
   Widget build(BuildContext context) {
