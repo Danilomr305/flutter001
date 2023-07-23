@@ -47,6 +47,6 @@ class Dadoos extends StatelessWidget {
               ),
         ],
       ),
-    ); 
+    );
   }
 }
