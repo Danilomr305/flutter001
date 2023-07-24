@@ -21,7 +21,7 @@ class Dadoos extends StatefulWidget {
   @override
   State<Dadoos> createState() => _DadoosState();
 }
-
+ 
 class _DadoosState extends State<Dadoos> {
   int numeroEsquerda = 1;
   int numeroDireita = 1;
