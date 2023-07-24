@@ -50,7 +50,7 @@ class _DadoosState extends State<Dadoos> {
               },
               child: Image.asset('imagens/dado$numeroDireita.png'),
           ),
-          ),
+          ), 
         ],
       ),
     );
