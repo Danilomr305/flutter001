@@ -48,7 +48,7 @@ class _DadoosState extends State<Dadoos> {
                   numeroDireita = 6;
                 });
               },
-              child: Image.asset('imagens/dado$numeroDireita.png'),
+              child: Image.asset('imagens/dado$numeroDireita.png'), 
           ),
           ),  
         ],
