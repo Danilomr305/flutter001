@@ -15,39 +15,44 @@ void main() {
   );
 }
 
-class Dadoos extends StatelessWidget {
+class Dadoos extends StatefulWidget {
   const Dadoos({super.key});
-  
+
+  @override
+  State<Dadoos> createState() => _DadoosState();
+}
+
+class _DadoosState extends State<Dadoos> {
+  int numeroEsquerda = 1;
+  int numeroDireita = 1;
 
   @override
   Widget build(BuildContext context) {
-   var numeroDadoEsquerdo = 5;  
-
-    return  Center(
+    return Center(
       child: Row(
         children: [
-            Expanded( 
-              child: TextButton(
-                  onPressed: () {
-                    // ignore: avoid_print
-                    print('Botão esquerdo pressionado'); 
-                   },
-                  child: Image.asset('imagens/dado$numeroDadoEsquerdo.png'),
-                ),
-            ), 
-          
-
-            Expanded(  
-                child: TextButton(
-                  onPressed: () {
-                    // ignore: avoid_print 
-                    print('Botão direito pressionado');
-                  }, 
-                  child: Image.asset('imagens/dado2.png'),
-                ),
-              ),
-        ],  
+          Expanded(
+            child: TextButton(
+              onPressed: () {
+                setState(() {
+                  numeroEsquerda = 3;
+                });
+              },
+              child: Image.asset('imagens/dado$numeroEsquerda.png'),
+          ),
+          ),
+          Expanded(
+            child: TextButton(
+              onPressed: () {
+                setState(() {
+                  numeroDireita = 6;
+                });
+              },
+              child: Image.asset('imagens/dado$numeroDireita.png'),
+          ),
+          ),
+        ],
       ),
     );
   }
-} 
+}
