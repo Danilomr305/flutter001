@@ -30,7 +30,7 @@ class _DadoosState extends State<Dadoos> {
 
   void alterarFacesDosDados () {
     setState(() {
-      numeroEsquerda = Random().nextInt(6) +1;
+      numeroEsquerda = Random().nextInt(6) +1
       numeroDireita = Random().nextInt(6) +1;
     });
   }
