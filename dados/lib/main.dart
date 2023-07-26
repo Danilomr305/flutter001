@@ -40,7 +40,7 @@ class _DadoosState extends State<Dadoos> {
   Widget build(BuildContext context) {
     return Center(
       child: Row(
-        children: [
+        children: [ 
           Expanded(
             child: TextButton(
               onPressed: () {
