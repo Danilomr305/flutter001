@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:cpf_cnpj_validator/cnpj_validator.dart';
 
-void main() {
-  runApp(const MainApp());
-}
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+void main() => runApp(const MarimbaApp());
+
+class MarimbaApp extends StatelessWidget {
+  const MarimbaApp({super.key});
 
   @override
   Widget build(BuildContext context) {
