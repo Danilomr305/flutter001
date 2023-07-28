@@ -14,7 +14,7 @@ class MarimbaApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(child: TextButton(onPressed: (){}, child: Text('Clique em mim'))), 
+          child: Center(child: TextButton(onPressed: (){}, child: Text('Clique em mim!'))), 
         ),
       ), 
     );
