@@ -6,7 +6,7 @@ import 'package:just_audio/just_audio.dart';
 
 void main() => runApp(const MarimbaApp());
 
-class MarimbaApp extends StatelessWidget {
+class MarimbaApp extends StatelessWidget { 
   const MarimbaApp({super.key});
 
   @override
