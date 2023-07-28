@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:cpf_cnpj_validator/cnpj_validator.dart';
-
+// ignore: unused_import
+import 'package:just_audio/just_audio.dart';
 
 void main() => runApp(const MarimbaApp());
 
