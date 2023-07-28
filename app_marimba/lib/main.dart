@@ -1,6 +1,5 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-// ignore: unused_import
-import 'package:audioplayers/audio_cache.dart';
 
 void main() => runApp(const MarimbaApp());
 
@@ -9,10 +8,19 @@ class MarimbaApp extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(child: TextButton(onPressed: (){}, child: Text('Clique em mim!'),),), 
+          child: Center(
+            child: TextButton(
+              onPressed: () {
+
+                final player = AudioCache();
+                player.play('toque/nota1.wav');
+              },
+              child: const Text('Clique em mim!'),
+            ),
+          ), 
         ),
       ), 
     );
