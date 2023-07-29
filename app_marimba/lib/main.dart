@@ -1,7 +1,8 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MarimbaApp());
+// ignore: prefer_const_constructors
+void main() => runApp(MarimbaApp());
 
 class MarimbaApp extends StatelessWidget { 
   const MarimbaApp({super.key});
@@ -14,11 +15,10 @@ class MarimbaApp extends StatelessWidget {
           child: Center(
             child: TextButton(
               onPressed: () {
-
                 final player = AudioPlayer();
                 player.play(UrlSource('toque/nota1.wav'));
               }, 
-              child: const Text('Clique em mim!'),
+              child:  const Text('Clique em mim!'),
             ),
           ), 
         ),
