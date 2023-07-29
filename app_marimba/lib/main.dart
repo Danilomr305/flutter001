@@ -10,7 +10,7 @@ class MarimbaApp extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold( 
+      home: Scaffold(  
         body: SafeArea(
           child: Center( 
             child: TextButton(
