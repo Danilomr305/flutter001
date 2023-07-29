@@ -8,10 +8,8 @@ environment:
 
 dependencies:
   audioplayers: ^5.0.0
-  cpf_cnpj_validator: ^2.0.0
   flutter:
     sdk: flutter
-  just_audio: ^0.9.34
 
 dev_dependencies:
   flutter_test:
