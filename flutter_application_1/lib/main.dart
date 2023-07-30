@@ -29,6 +29,9 @@ class QuizPage extends StatefulWidget {
 }
 
 class _QuizPageState extends State<QuizPage> {
+
+  List marca
+
   @override
   Widget build(BuildContext context) {
     return  Column(
@@ -62,7 +65,9 @@ class _QuizPageState extends State<QuizPage> {
                     padding: EdgeInsets.all(16),
                     child: Text(
                       'Verdadeiro',
-                       style: TextStyle(
+                       style: 
+                       
+                       TextStyle(
                        fontSize: 20,
                       ),
                     ),
@@ -82,10 +87,12 @@ class _QuizPageState extends State<QuizPage> {
                 children: [
                   Padding(
                     padding: EdgeInsets.all(16),
-                    child: Text(
+                    child: 
+                    Text(
                       'Falso',
-                       style: TextStyle(
-                       fontSize: 20,
+                       style: 
+                      TextStyle(
+                        fontSize: 20,
                       ),
                     ),
                   ),
@@ -94,6 +101,20 @@ class _QuizPageState extends State<QuizPage> {
             ),
           ),
         ), 
+        const Row(
+          children: [
+            Icon(Icons.check, 
+              color: Colors.grey,
+            ),
+            Icon(Icons.close, 
+              color: Colors.red,),
+            Icon(Icons.check, 
+              color: Colors.grey,
+            ),
+            Icon(Icons.close, 
+              color: Colors.red,),
+          ],
+        )
       ],
     );
   }
