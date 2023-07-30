@@ -30,7 +30,7 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
 
-  List marca
+  List marcador
 
   @override
   Widget build(BuildContext context) {
