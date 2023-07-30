@@ -1,19 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+void main() => runApp(const Quizzler());
 
-class Quizzler extends StatefulWidget {
+
+class Quizzler extends StatelessWidget {
   const Quizzler({super.key});
 
   @override
-  State<Quizzler> createState() => _QuizzlerState();
-}
-
-class _QuizzlerState extends State<Quizzler> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp();
   }
 }
