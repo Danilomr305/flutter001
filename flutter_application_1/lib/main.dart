@@ -30,7 +30,24 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
 
-  List marcadorDePontos = []
+  List<Icon> marcadorDePontos = [
+    const Icon(
+      Icons.check, 
+      color: Colors.grey,
+      ),
+    const Icon(
+      Icons.close, 
+      color: Colors.red,
+      ),
+    const Icon(
+      Icons.check, 
+      color: Colors.grey,
+      ),
+    const Icon(
+      Icons.close, 
+      color: Colors.red,
+      ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +74,14 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
-              onPressed: () {}, 
+              onPressed: () {
+                setState(() {
+                  marcadorDePontos.add(
+                  const Icon(
+                    Icons.check, 
+                    color: Colors.green,));
+                });
+              }, 
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -81,7 +105,14 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
-              onPressed: () {}, 
+              onPressed: () {
+                setState(() {
+                  marcadorDePontos.add(
+                  const Icon(
+                    Icons.close, 
+                    color: Colors.red,));
+                });
+              }, 
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -101,20 +132,9 @@ class _QuizPageState extends State<QuizPage> {
             ),
           ),
         ), 
-        const Row(
-          children: [
-            Icon(Icons.check, 
-              color: Colors.grey,
-            ),
-            Icon(Icons.close, 
-              color: Colors.red,),
-            Icon(Icons.check, 
-              color: Colors.grey,
-            ),
-            Icon(Icons.close, 
-              color: Colors.red,),
-          ],
-        )
+        Row(
+          children: marcadorDePontos,
+          ),
       ],
     );
   }
