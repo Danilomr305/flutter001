@@ -4,17 +4,16 @@ void main() {
   runApp(const MainApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class Quizzler extends StatefulWidget {
+  const Quizzler({super.key});
 
   @override
+  State<Quizzler> createState() => _QuizzlerState();
+}
+
+class _QuizzlerState extends State<Quizzler> {
+  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
+    return const Placeholder();
   }
 }
