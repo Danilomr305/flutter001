@@ -38,6 +38,8 @@ class _QuizPageState extends State<QuizPage> {
     'Vacas podem voar, assim como peixes d\'agua utilizam os pês para andar.'
   ];
 
+  List<bool> respostas = [true, true, false];
+
   int numeroDaQuestaoAtual = 0;
 
   @override
@@ -66,6 +68,18 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
+
+                bool respostasCerta = respostas[numeroDaQuestaoAtual];
+
+                if(respostasCerta == true){
+                  // ignore: avoid_print
+                  print('Usuário acertou');
+                }else{
+                  // ignore: avoid_print
+                  print('Usuário errou');
+                }
+
+                // ignore: curly_braces_in_flow_control_structures
                 setState(() {
                   numeroDaQuestaoAtual++;
                 });
@@ -95,6 +109,17 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
+
+                bool respostasCerta = respostas[numeroDaQuestaoAtual];
+
+                if(respostasCerta == false){
+                  // ignore: avoid_print
+                  print('Usuário acertou');
+                }else{
+                  // ignore: avoid_print
+                  print('Usuário errou');
+                }
+
                 setState(() {
                   numeroDaQuestaoAtual++;
                 });
