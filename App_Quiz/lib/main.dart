@@ -30,8 +30,12 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
 
-  List<Icon> marcadorDePontos = [
-    
+  List<Icon> marcadorDePontos = [];
+
+  List<String> perguntas = [
+    'O metrô é um dos meios de transporte mais seguros do mundo.',
+    'A culinária  brasileira é uma das melhores do mundo.',
+    'Vacas podem voar, assim como peixes d\'agua utilizam os pês para andar.'
   ];
 
   @override
