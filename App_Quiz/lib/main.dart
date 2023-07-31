@@ -67,7 +67,7 @@ class _QuizPageState extends State<QuizPage> {
             child: ElevatedButton(
               onPressed: () {
                 setState(() {
-                  numeroDaQuestaoAtual + numeroDaQuestaoAtual + 1;
+                  numeroDaQuestaoAtual++;
                 });
                 
               }, 
@@ -96,7 +96,7 @@ class _QuizPageState extends State<QuizPage> {
             child: ElevatedButton(
               onPressed: () {
                 setState(() {
-                  numeroDaQuestaoAtual + numeroDaQuestaoAtual + 1;
+                  numeroDaQuestaoAtual++;
                 });
               }, 
               child: const Column(
