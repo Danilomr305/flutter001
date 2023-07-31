@@ -31,22 +31,7 @@ class QuizPage extends StatefulWidget {
 class _QuizPageState extends State<QuizPage> {
 
   List<Icon> marcadorDePontos = [
-    const Icon(
-      Icons.check, 
-      color: Colors.grey,
-      ),
-    const Icon(
-      Icons.close, 
-      color: Colors.red,
-      ),
-    const Icon(
-      Icons.check, 
-      color: Colors.grey,
-      ),
-    const Icon(
-      Icons.close, 
-      color: Colors.red,
-      ),
+    
   ];
 
   @override
@@ -75,12 +60,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
-                setState(() {
-                  marcadorDePontos.add(
-                  const Icon(
-                    Icons.check, 
-                    color: Colors.green,));
-                });
+                
               }, 
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -106,12 +86,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
-                setState(() {
-                  marcadorDePontos.add(
-                  const Icon(
-                    Icons.close, 
-                    color: Colors.red,));
-                });
+                
               }, 
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
