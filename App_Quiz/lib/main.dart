@@ -38,21 +38,23 @@ class _QuizPageState extends State<QuizPage> {
     'Vacas podem voar, assim como peixes d\'agua utilizam os pês para andar.'
   ];
 
+  int numeroDaQuestaoAtual = 0;
+
   @override
   Widget build(BuildContext context) {
     return  Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        const Expanded(
+        Expanded(
           flex: 5,
           child: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                'As perguntas serão exibidas aqui.',
+                perguntas[numeroDaQuestaoAtual],
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 25.0,
                 ),
               ),
@@ -64,6 +66,9 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
+                setState(() {
+                  numeroDaQuestaoAtual + numeroDaQuestaoAtual + 1;
+                });
                 
               }, 
               child: const Column(
@@ -90,7 +95,9 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
-                
+                setState(() {
+                  numeroDaQuestaoAtual + numeroDaQuestaoAtual + 1;
+                });
               }, 
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
