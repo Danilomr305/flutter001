@@ -77,7 +77,7 @@ class _QuizPageState extends State<QuizPage> {
               bancoDePerguntas[numeroDaQuestaoAtual].questao,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 25.0,
+                  fontSize: 25.0, 
                   fontWeight: FontWeight.w900,
                 ),
               ),
