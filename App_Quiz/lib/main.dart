@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'perguntas.dart';
 
 void main() => runApp(const Quizzler());
 
@@ -42,13 +43,22 @@ class _QuizPageState extends State<QuizPage> {
 
   List<Icon> marcadorDePontos = [];
 
-  List<String> perguntas = [
-    'O metrô é um dos meios de transporte mais seguros do mundo.',
-    'A culinária  brasileira é uma das melhores do mundo.',
-    'Vacas podem voar, assim como peixes d\'agua utilizam os pês para andar.'
+  /*List<bool> respostas = [true, true, false];*/
+
+  List<Perguntas> bancoDePerguntas = [
+    Perguntas(
+      q: 'O metrô é um dos meios de transporte mais seguros do mundo.', 
+      r: true),
+    Perguntas(
+      q: 'A culinária  brasileira é uma das melhores do mundo.', 
+      r: true),
+    Perguntas(
+      q: 'Vacas podem voar, assim como peixes d\'agua utilizam os pês para andar.', 
+      r: false)
   ];
 
-  List<bool> respostas = [true, true, false];
+
+  /*Perguntas  p1 = Perguntas(q: 'O metrô é um dos meios de transporte mais seguros do mundo.', r: true);*/
 
   int numeroDaQuestaoAtual = 0;
 
@@ -63,8 +73,8 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: const EdgeInsets.all(10.0),
             child: Center(
-              child: Text(
-                perguntas[numeroDaQuestaoAtual],
+              child: Text( 
+              bancoDePerguntas[numeroDaQuestaoAtual].questao,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 25.0,
@@ -79,8 +89,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
-
-                bool respostasCerta = respostas[numeroDaQuestaoAtual];
+                bool? respostasCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao;
 
                 if(respostasCerta == true){
                   // ignore: avoid_print
@@ -121,7 +130,7 @@ class _QuizPageState extends State<QuizPage> {
             child: ElevatedButton( 
               onPressed: () {
 
-                bool respostasCerta = respostas[numeroDaQuestaoAtual];
+                bool? respostasCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao;
 
                 if(respostasCerta == false){
                   // ignore: avoid_print
