@@ -84,7 +84,7 @@ class _QuizPageState extends State<QuizPage> {
             ),
           ),
         ),
-        Expanded(
+        Expanded( 
           child: Padding(
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
