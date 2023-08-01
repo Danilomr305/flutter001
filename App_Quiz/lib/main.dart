@@ -147,6 +147,6 @@ class _QuizPageState extends State<QuizPage> {
           children: marcadorDePontos,
           ),
       ],
-    );
+    ); 
   }  
 }     
