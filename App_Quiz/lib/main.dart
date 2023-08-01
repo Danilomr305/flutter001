@@ -89,7 +89,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
-                bool? respostasCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao;
+                bool? respostasCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao; 
 
                 if(respostasCerta == true){
                   // ignore: avoid_print
