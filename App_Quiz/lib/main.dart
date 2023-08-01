@@ -83,7 +83,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
             ),
           ),
-        ),
+        ), 
         Expanded( 
           child: Padding(
             padding: const EdgeInsets.all(15.0),
