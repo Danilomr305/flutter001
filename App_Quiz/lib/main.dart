@@ -8,9 +8,19 @@ class Quizzler extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       home: Scaffold(
-        body: SafeArea(
+        backgroundColor: const Color.fromARGB(202, 149, 117, 205),
+        appBar: AppBar(
+          title: 
+          const Text('App Quizz',
+          style: TextStyle(
+            fontWeight: FontWeight.w900,
+          ),
+          ),
+          backgroundColor: Colors.deepPurple,
+        ),
+        body: const SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.0),
             child: QuizPage(),
@@ -58,6 +68,7 @@ class _QuizPageState extends State<QuizPage> {
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 25.0,
+                  fontWeight: FontWeight.w900,
                 ),
               ),
             ),
@@ -93,9 +104,9 @@ class _QuizPageState extends State<QuizPage> {
                     child: Text(
                       'Verdadeiro',
                        style: 
-                       
                        TextStyle(
                        fontSize: 20,
+                       fontWeight: FontWeight.w900
                       ),
                     ),
                   ),
@@ -106,8 +117,8 @@ class _QuizPageState extends State<QuizPage> {
         ), 
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: ElevatedButton(
+            padding:  const EdgeInsets.all(15.0),
+            child: ElevatedButton( 
               onPressed: () {
 
                 bool respostasCerta = respostas[numeroDaQuestaoAtual];
@@ -135,10 +146,11 @@ class _QuizPageState extends State<QuizPage> {
                        style: 
                       TextStyle(
                         fontSize: 20,
+                        fontWeight: FontWeight.w900
                       ),
                     ),
                   ),
-                ],
+                ], 
               ), 
             ),
           ),
