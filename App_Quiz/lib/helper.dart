@@ -6,12 +6,9 @@ int _numeroDaQuestaoAtual =0;
 
   // ignore: prefer_final_fields, unused_field
   List<Perguntas> _bancoDePerguntas = [
-    Perguntas(
-       'O metrô é um dos meios de transporte mais seguros do mundo.',  true),
-    Perguntas(
-       'A culinária  brasileira é uma das melhores do mundo.',  true),
-    Perguntas(
-      'Vacas podem voar, assim como peixes d\'agua utilizam os pês para andar.', false),
+      Perguntas('O metrô é um dos meios de transporte mais seguros do mundo.',  true),
+      Perguntas('A culinária  brasileira é uma das melhores do mundo.',  true),
+      Perguntas('Vacas podem voar, assim como peixes d\'agua utilizam os pês para andar.', false),
       Perguntas('A maioria dos peixes podem viver fora da água.', false),
       Perguntas('A lâmpada foi inventada por um brasileiro.', false),
       Perguntas('É possivel utilizar a carteira de habilitração de carro para dirigir um avião.', false),
