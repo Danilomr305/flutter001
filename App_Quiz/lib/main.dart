@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'perguntas.dart';
+import 'helper.dart';
+
+Helper  helper  = Helper();
 
 void main() => runApp(const Quizzler());
 
@@ -43,13 +45,6 @@ class _QuizPageState extends State<QuizPage> {
 
   List<Icon> marcadorDePontos = [];
 
-  /*List<bool> respostas = [true, true, false];*/
-
-
-  /*Perguntas  p1 = Perguntas(q: 'O metrô é um dos meios de transporte mais seguros do mundo.', r: true);*/
-
-  int numeroDaQuestaoAtual = 0;
-
   @override
   Widget build(BuildContext context) {
     return  Column(
@@ -62,7 +57,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(10.0),
             child: Center(
               child: Text( 
-              bancoDePerguntas[numeroDaQuestaoAtual].questao,
+              helper.obterQuesta0(numeroDaQuestaoAtual),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 25.0, 
@@ -77,7 +72,8 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
-                bool? respostasCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao; 
+                bool? respostasCerta = helper
+                .obterRespostaCorretar(numeroDaQuestaoAtual);
 
                 if(respostasCerta == true){
                   // ignore: avoid_print
@@ -118,7 +114,8 @@ class _QuizPageState extends State<QuizPage> {
             child: ElevatedButton( 
               onPressed: () {
 
-                bool? respostasCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao;
+                bool? respostasCerta = helper
+                .obterRespostaCorretar(numeroDaQuestaoAtual);
 
                 if(respostasCerta == false){
                   // ignore: avoid_print

@@ -1,7 +1,11 @@
 import 'perguntas.dart';
 
 class Helper{
-  List<Perguntas> bancoDePerguntas = [
+
+int _numeroDaQuestaoAtual =0;
+
+  // ignore: prefer_final_fields, unused_field
+  List<Perguntas> _bancoDePerguntas = [
     Perguntas(
        'O metrô é um dos meios de transporte mais seguros do mundo.',  true),
     Perguntas(
@@ -19,4 +23,13 @@ class Helper{
       Perguntas('Ler após um refeição prejudica a visão humana.', false),
       Perguntas('O cartão de crédito pode ser considerado uma moeda virtual.', false),
   ];
+
+String obterQuesta0(){
+  return _bancoDePerguntas[_numeroDaQuestaoAtual].questao;
+ }
+
+bool obterRespostaCorretar(){
+  return _bancoDePerguntas[_numeroDaQuestaoAtual].respostaDaQuestao;
+
+ }
 }
