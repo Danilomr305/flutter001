@@ -3,9 +3,12 @@ class Perguntas{
   late bool respostaDaQuestao;
 
 
-  Perguntas ({required String q, required bool r}){
+  Perguntas (String q, bool r){
     questao = q;
 
     respostaDaQuestao = r;
   }
 }
+
+
+Perguntas novaPerguntas = Perguntas( 'sdsd', true);

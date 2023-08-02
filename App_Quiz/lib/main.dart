@@ -45,18 +45,6 @@ class _QuizPageState extends State<QuizPage> {
 
   /*List<bool> respostas = [true, true, false];*/
 
-  List<Perguntas> bancoDePerguntas = [
-    Perguntas(
-      q: 'O metrô é um dos meios de transporte mais seguros do mundo.', 
-      r: true),
-    Perguntas(
-      q: 'A culinária  brasileira é uma das melhores do mundo.', 
-      r: true),
-    Perguntas(
-      q: 'Vacas podem voar, assim como peixes d\'agua utilizam os pês para andar.', 
-      r: false)
-  ];
-
 
   /*Perguntas  p1 = Perguntas(q: 'O metrô é um dos meios de transporte mais seguros do mundo.', r: true);*/
 
