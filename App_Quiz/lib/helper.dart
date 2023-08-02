@@ -21,7 +21,7 @@ int _numeroDaQuestaoAtual =0;
       Perguntas('O cartão de crédito pode ser considerado uma moeda virtual.', false),
   ];
 
-  void proximaPergunta(){
+  void proximaPergunta(){ 
     if(_numeroDaQuestaoAtual < _bancoDePerguntas.length -1){
       _numeroDaQuestaoAtual++;
     }
