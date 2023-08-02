@@ -24,12 +24,18 @@ int _numeroDaQuestaoAtual =0;
       Perguntas('O cartão de crédito pode ser considerado uma moeda virtual.', false),
   ];
 
-String obterQuesta0(){
-  return _bancoDePerguntas[_numeroDaQuestaoAtual].questao;
- }
+  void proximaPergunta(){
+    if(_numeroDaQuestaoAtual < _bancoDaQuestaoAtual.length){
+      _numeroDaQuestaoAtual++;
+    }
+  }
 
-bool obterRespostaCorretar(){
-  return _bancoDePerguntas[_numeroDaQuestaoAtual].respostaDaQuestao;
+  String obterQuesta0(){
+    return _bancoDePerguntas[_numeroDaQuestaoAtual].questao;
+  }
 
- }
+  bool obterRespostaCorretar(){
+    return _bancoDePerguntas[_numeroDaQuestaoAtual].respostaDaQuestao;
+
+  }
 }
