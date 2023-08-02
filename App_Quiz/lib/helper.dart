@@ -25,9 +25,13 @@ int _numeroDaQuestaoAtual =0;
   ];
 
   void proximaPergunta(){
-    if(_numeroDaQuestaoAtual < _bancoDePerguntas.length){
+    if(_numeroDaQuestaoAtual < _bancoDePerguntas.length -1){
       _numeroDaQuestaoAtual++;
     }
+    // ignore: avoid_print
+    print(_numeroDaQuestaoAtual);
+    // ignore: avoid_print
+    print(_bancoDePerguntas.length);
   }
 
   String obterQuesta0(){
