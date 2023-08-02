@@ -25,7 +25,7 @@ int _numeroDaQuestaoAtual =0;
   ];
 
   void proximaPergunta(){
-    if(_numeroDaQuestaoAtual < _bancoDaQuestaoAtual.length){
+    if(_numeroDaQuestaoAtual < _bancoDePerguntas.length){
       _numeroDaQuestaoAtual++;
     }
   }

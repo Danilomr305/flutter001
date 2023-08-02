@@ -57,7 +57,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(10.0),
             child: Center(
               child: Text( 
-              helper.obterQuesta0(numeroDaQuestaoAtual),
+              helper.obterQuesta0(),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 25.0, 
@@ -73,7 +73,7 @@ class _QuizPageState extends State<QuizPage> {
             child: ElevatedButton(
               onPressed: () {
                 bool? respostasCerta = helper
-                .obterRespostaCorretar(numeroDaQuestaoAtual);
+                .obterRespostaCorretar();
 
                 if(respostasCerta == true){
                   // ignore: avoid_print
@@ -85,7 +85,7 @@ class _QuizPageState extends State<QuizPage> {
 
                 // ignore: curly_braces_in_flow_control_structures
                 setState(() {
-                  numeroDaQuestaoAtual++;
+                  helper.proximaPergunta();
                 });
                 
               }, 
@@ -115,7 +115,7 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
 
                 bool? respostasCerta = helper
-                .obterRespostaCorretar(numeroDaQuestaoAtual);
+                .obterRespostaCorretar();
 
                 if(respostasCerta == false){
                   // ignore: avoid_print
@@ -126,7 +126,7 @@ class _QuizPageState extends State<QuizPage> {
                 }
 
                 setState(() {
-                  numeroDaQuestaoAtual++;
+                  helper.proximaPergunta();
                 });
               }, 
               child: const Column(
