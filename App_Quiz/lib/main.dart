@@ -44,6 +44,8 @@ class QuizPage extends StatefulWidget{
 class _QuizPageState extends State<QuizPage> {
   
   List<Icon> marcadorDePontos = [];
+
+  
  
   @override
   Widget build(BuildContext context) {
