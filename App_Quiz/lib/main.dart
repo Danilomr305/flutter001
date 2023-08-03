@@ -57,8 +57,8 @@ class _QuizPageState extends State<QuizPage> {
      print('Usuário errou');
     }
 
-                // ignore: curly_braces_in_flow_control_structures
-                setState(() {
+    // ignore: curly_braces_in_flow_control_structures
+    setState(() {
                   helper.proximaPergunta();
                 });
 
