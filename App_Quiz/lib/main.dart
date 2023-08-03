@@ -138,7 +138,7 @@ class _QuizPageState extends State<QuizPage> {
                     Text(
                       'Falso',
                        style: 
-                      TextStyle(
+                      TextStyle( 
                         fontSize: 20,
                         fontWeight: FontWeight.w900
                       ),
