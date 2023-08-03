@@ -45,7 +45,9 @@ class _QuizPageState extends State<QuizPage> {
   
   List<Icon> marcadorDePontos = [];
 
-  
+  void conferirResposta(){
+    
+  }
  
   @override
   Widget build(BuildContext context) {
