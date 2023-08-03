@@ -59,7 +59,7 @@ class _QuizPageState extends State<QuizPage> {
               child: Text( 
               helper.obterQuesta0(),
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style: const TextStyle( 
                   fontSize: 25.0, 
                   fontWeight: FontWeight.w900,
                 ),
