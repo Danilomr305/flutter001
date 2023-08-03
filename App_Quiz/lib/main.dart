@@ -50,8 +50,8 @@ class _QuizPageState extends State<QuizPage> {
     .obterRespostaCorretar();
 
     if(respostasCerta == true){
-                  // ignore: avoid_print
-                  print('Usuário acertou');
+    // ignore: avoid_print
+    print('Usuário acertou');
                 }else{
                   // ignore: avoid_print
                   print('Usuário errou');
