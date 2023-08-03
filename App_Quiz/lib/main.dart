@@ -43,22 +43,23 @@ class QuizPage extends StatefulWidget{
 
 class _QuizPageState extends State<QuizPage> {
   
-  List<Icon> marcadorDePontos = [];
+  List<Icon> marcadorDePontos = [
+    
+  ];
 
   void conferirResposta(bool respostaSelecinadaPeloUsuario){
-    bool? respostasCerta = helper
-    .obterRespostaCorretar();
+    bool? respostasCerta = helper.obterRespostaCorretar();
 
-    if(respostasCerta == true){
+  setState(() {
+
+    if(respostaSelecinadaPeloUsuario == respostasCerta){
     // ignore: avoid_print
-    print('Usuário acertou');
+    marcadorDePontos.add(const Icon(Icons.check, color: Colors.green,));
     }else{
     // ignore: avoid_print
-     print('Usuário errou');
+     marcadorDePontos.add(const Icon(Icons.close, color: Colors.red,));
     }
-
     // ignore: curly_braces_in_flow_control_structures
-    setState(() {
       helper.proximaPergunta();
     });
 
@@ -91,7 +92,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
-                
+                conferirResposta(true);
               }, 
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -117,21 +118,7 @@ class _QuizPageState extends State<QuizPage> {
             padding:  const EdgeInsets.all(15.0),
             child: ElevatedButton( 
               onPressed: () {
-
-                bool? respostasCerta = helper
-                .obterRespostaCorretar();
-
-                if(respostasCerta == false){
-                  // ignore: avoid_print
-                  print('Usuário acertou');
-                }else{
-                  // ignore: avoid_print
-                  print('Usuário errou');
-                }
-
-                setState(() {
-                  helper.proximaPergunta();
-                });
+                conferirResposta(false);
               },   
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
