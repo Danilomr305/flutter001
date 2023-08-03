@@ -128,7 +128,7 @@ class _QuizPageState extends State<QuizPage> {
                 setState(() {
                   helper.proximaPergunta();
                 });
-              },  
+              },   
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
