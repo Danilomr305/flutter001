@@ -54,8 +54,8 @@ class _QuizPageState extends State<QuizPage> {
     print('Usuário acertou');
     }else{
     // ignore: avoid_print
-                  print('Usuário errou');
-                }
+     print('Usuário errou');
+    }
 
                 // ignore: curly_braces_in_flow_control_structures
                 setState(() {
