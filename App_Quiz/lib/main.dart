@@ -150,9 +150,9 @@ class _QuizPageState extends State<QuizPage> {
           ),
         ), 
         Row(    
-          children: marcadorDePontos, 
+          children: marcadorDePontos,  
           ),
       ],   
     ); 
   }  
-}                
+}                 
