@@ -49,7 +49,7 @@ class _QuizPageState extends State<QuizPage> {
     bool? respostasCerta = helper
     .obterRespostaCorretar();
 
-                if(respostasCerta == true){
+    if(respostasCerta == true){
                   // ignore: avoid_print
                   print('Usuário acertou');
                 }else{
