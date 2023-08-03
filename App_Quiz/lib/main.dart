@@ -45,8 +45,8 @@ class _QuizPageState extends State<QuizPage> {
   
   List<Icon> marcadorDePontos = [];
 
-  void conferirResposta(){
-    
+  void conferirResposta(bool respostaSelecinadaPeloUsuario){
+
   }
  
   @override
