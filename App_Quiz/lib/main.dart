@@ -76,21 +76,6 @@ class _QuizPageState extends State<QuizPage> {
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
               onPressed: () {
-                bool? respostasCerta = helper
-                .obterRespostaCorretar();
-
-                if(respostasCerta == true){
-                  // ignore: avoid_print
-                  print('Usuário acertou');
-                }else{
-                  // ignore: avoid_print
-                  print('Usuário errou');
-                }
-
-                // ignore: curly_braces_in_flow_control_structures
-                setState(() {
-                  helper.proximaPergunta();
-                });
                 
               }, 
               child: const Column(
