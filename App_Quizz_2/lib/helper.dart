@@ -48,7 +48,7 @@ int _numeroDaQuestaoAtual =0;
   }
 
   confereFimDaExecucao() {
-    if (_numeroDaQuestaoAtual >= _bancoDePerguntas.length - 1) {
+    if (_numeroDaQuestaoAtual >= _bancoDePerguntas.length - 1) { 
       // ignore: avoid_print
       print('Chegou na última pergunta do quiz');
       return true;
