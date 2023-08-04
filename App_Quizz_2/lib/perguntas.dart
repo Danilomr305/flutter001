@@ -3,12 +3,6 @@ class Perguntas{
   late bool respostaDaQuestao;
 
 
-  Perguntas (String q, bool r){
-    questao = q;
-
-    respostaDaQuestao = r;
-  }
+  Perguntas (this.questao, this.respostaDaQuestao);
+  
 }
-
-
-Perguntas novaPerguntas = Perguntas( 'sdsd', true);
