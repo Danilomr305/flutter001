@@ -63,4 +63,3 @@ int _numeroDaQuestaoAtual =0;
 }  
   
   
-dd
