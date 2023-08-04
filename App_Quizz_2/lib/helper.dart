@@ -56,7 +56,7 @@ int _numeroDaQuestaoAtual =0;
       return false;
     }
   }
-
+ 
   resetarQuiz() { 
     _numeroDaQuestaoAtual = 0;
   }
