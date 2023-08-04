@@ -54,6 +54,19 @@ class _QuizPageState extends State<QuizPage> {
 
   setState(() {
 
+    if (helper.confereFimDaExecucao() == true) {
+
+        Alert(
+          context: context,
+          title: 'Fim do Quiz!',
+          desc: 'Você respondeu a todas as perguntas.',
+        ).show();
+
+        helper.resetarQuiz();
+
+        marcadorDePontos = [];
+      }
+
     if(respostaSelecinadaPeloUsuario == respostasCerta){
     // ignore: avoid_print
     marcadorDePontos.add(const Icon(Icons.check, color: Colors.green,));
@@ -63,8 +76,8 @@ class _QuizPageState extends State<QuizPage> {
     }
     // ignore: curly_braces_in_flow_control_structures
       helper.proximaPergunta();
-    });
-
+    }
+   );
   }
  
   @override
@@ -143,8 +156,9 @@ class _QuizPageState extends State<QuizPage> {
           ),
         ), 
         Row(    
-          children: marcadorDePontos,   
-          ),
+          children: marcadorDePontos,  
+          
+          ),  
       ],   
     );  
   }  

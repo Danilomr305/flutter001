@@ -1,3 +1,9 @@
+
+// ignore: unused_import
+import 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:rflutter_alert/rflutter_alert.dart';
+
 import 'perguntas.dart';
 
 class Helper{
@@ -21,6 +27,7 @@ int _numeroDaQuestaoAtual =0;
       Perguntas('O cartão de crédito pode ser considerado uma moeda virtual.', false),
   ];
 
+
   void proximaPergunta(){ 
     if(_numeroDaQuestaoAtual < _bancoDePerguntas.length -1){
       _numeroDaQuestaoAtual++;
@@ -39,4 +46,20 @@ int _numeroDaQuestaoAtual =0;
     return _bancoDePerguntas[_numeroDaQuestaoAtual].respostaDaQuestao;
 
   }
+
+  confereFimDaExecucao() {
+    if (_numeroDaQuestaoAtual >= _bancoDePerguntas.length - 1) {
+      // ignore: avoid_print
+      print('Chegou na última pergunta do quiz');
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  resetarQuiz() {
+    _numeroDaQuestaoAtual = 0;
+  }
 }
+  
+  
