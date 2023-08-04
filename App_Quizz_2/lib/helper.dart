@@ -57,8 +57,8 @@ int _numeroDaQuestaoAtual =0;
     }
   }
  
-  resetarQuiz() { 
-    _numeroDaQuestaoAtual = 0;
+  resetarQuiz() {  
+    _numeroDaQuestaoAtual = 0; 
   }
 }  
   
