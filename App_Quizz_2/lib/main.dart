@@ -114,7 +114,7 @@ class _QuizPageState extends State<QuizPage> {
                 children: [ 
                   Padding(
                     padding: EdgeInsets.all(16),
-                    child: Text(
+                    child: Text( 
                       'Verdadeiro',
                        style: 
                        TextStyle(
