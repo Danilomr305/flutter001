@@ -122,7 +122,7 @@ class _QuizPageState extends State<QuizPage> {
                        fontWeight: FontWeight.w900
                       ),
                     ),
-                  ),
+                  ), 
                 ],
               ), 
             ),
