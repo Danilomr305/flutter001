@@ -111,7 +111,7 @@ class _QuizPageState extends State<QuizPage> {
               }, 
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: [ 
                   Padding(
                     padding: EdgeInsets.all(16),
                     child: Text(
