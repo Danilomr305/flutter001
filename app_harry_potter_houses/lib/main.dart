@@ -27,17 +27,12 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
     return Scaffold(
       // ignore: avoid_unnecessary_containers
       body: Container(
-        padding: 
-          const EdgeInsets.
-            symmetric(
-              vertical: 50.0,
-              horizontal: 50.0),
-        constraints: const BoxConstraints.expand(),
-        child: const Image(
-          image: AssetImage(
-            'imagens/harrypotter.jpg'
+       decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('imagens/harrypotter.jpg'),
+          fit: BoxFit.cover
           ),
-        ),  
+        ),
       ),
     );
   }
