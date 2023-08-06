@@ -33,6 +33,17 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
           fit: BoxFit.cover
           ),
         ),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 50.0, 
+        ),
+        constraints: 
+        const BoxConstraints.expand(),
+        child: const SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            
+          ),
+        ),
       ),
     );
   }
