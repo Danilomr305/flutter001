@@ -22,7 +22,7 @@ class HarryPoterPage extends StatefulWidget {
   State<HarryPoterPage> createState() => _HarryPoterPageState();
 }
 
-class _HarryPoterPageState extends State<HarryPoterPage> {
+class _HarryPoterPageState extends State<HarryPoterPage> { 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
