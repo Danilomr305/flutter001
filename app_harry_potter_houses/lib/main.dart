@@ -26,15 +26,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'HARRY POTTER',
-          style: TextStyle(
-            fontSize: 25.0,
-            fontWeight: FontWeight.w900,
-          ),
-        ),
-      ),
+      
       body: Container(
        decoration: const BoxDecoration(
         image: DecorationImage(
