@@ -17,7 +17,7 @@ class Harry extends StatelessWidget {
 
 class HarryPoterPage extends StatefulWidget {
   const HarryPoterPage({super.key, required AppBar appBar});
-
+  
   @override 
   State<HarryPoterPage> createState() => _HarryPoterPageState();
 }
