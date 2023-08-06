@@ -26,7 +26,6 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // ignore: avoid_unnecessary_containers
       appBar: AppBar(
         title: const Text(
           'HARRY POTTER',
