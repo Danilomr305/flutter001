@@ -37,7 +37,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
           image: AssetImage(
             'imagens/'
           ),
-        ),   
+        ),  
       ),
     ); 
   }
