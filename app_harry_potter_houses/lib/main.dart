@@ -24,17 +24,18 @@ class HarryPoterPage extends StatefulWidget {
 
 class _HarryPoterPageState extends State<HarryPoterPage> {   
   @override
+  // ignore: dead_code
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Container(
        decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage('imagens/harrypotter.jpg'),
-          fit: BoxFit.cover
-          ),
+        fit: BoxFit.cover,
         ),
+      ),
         padding: const EdgeInsets.symmetric(
+          vertical: 50.0,
           horizontal: 50.0, 
         ),
         constraints:  
@@ -47,14 +48,16 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
                 flex: 12, 
                 child: Center(
                   child: 
-                  Padding(padding: EdgeInsets.only(top: 120.0)),
+                  Padding(
+                    padding: EdgeInsets.only(top: 120.0),
+                  ),
                 ),
               ),
             ],
           ),
-        ),   
-      ),
-    ); 
+        ),
+       ),
+      );
   }
 }   
   
