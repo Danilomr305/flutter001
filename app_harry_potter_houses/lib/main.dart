@@ -41,7 +41,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
         child: const SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            
+            children: <Widget>[],
           ),
         ),
       ),
