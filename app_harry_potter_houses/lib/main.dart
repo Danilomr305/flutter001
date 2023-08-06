@@ -37,7 +37,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
         padding: const EdgeInsets.symmetric(
           horizontal: 50.0, 
         ),
-        constraints: 
+        constraints:  
         const BoxConstraints.expand(),
         child: const SafeArea(
           child: Column(
