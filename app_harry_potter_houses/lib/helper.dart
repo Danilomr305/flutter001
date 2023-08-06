@@ -75,9 +75,8 @@ class Helper{
     else if (_questionNumber == 3 || _questionNumber == 4 || _questionNumber == 5 || _questionNumber == 6){
       restart();
     }
-
-    void restart(){
+  }
+  void restart(){
       _questionNumber = 0;
     }
-  }
 }

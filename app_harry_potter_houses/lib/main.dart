@@ -44,18 +44,18 @@ class _HarryPotterPageState extends State<HarryPotterPage> {
           horizontal: 50.0
         ),
         constraints: const BoxConstraints.expand(),
-        child: const SafeArea(
+        child:  SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Expanded(
                 child: Center(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 120),
+                    padding: const EdgeInsets.only(top: 120),
                     child: Text(
                       helper.getQueston(),
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 25.0
                       ),
                     ),
