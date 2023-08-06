@@ -41,5 +41,5 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
       ),
     );
   }
-}
+} 
 
