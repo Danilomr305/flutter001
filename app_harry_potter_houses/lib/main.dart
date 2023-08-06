@@ -35,7 +35,7 @@ class _HarryPoterPageState extends State<HarryPoterPage> {
         constraints: const BoxConstraints.expand(),
         child: const Image(
           image: AssetImage(
-            'imagens/'
+            'imagens/harrypotter.jpg'
           ),
         ),  
       ),
