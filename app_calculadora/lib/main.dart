@@ -1,20 +1,33 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+void main() => runApp(CalculadoraIMC());
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class CalculadoraIMC extends StatelessWidget {
+  const CalculadoraIMC({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+      home: TelaPrincipal(),
+    );
+  }
+}
+
+class TelaPrincipal extends StatefulWidget {
+  const TelaPrincipal({super.key});
+
+  @override
+  State<TelaPrincipal> createState() => _TelaPrincipalState();
+}
+
+class _TelaPrincipalState extends State<TelaPrincipal> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('CALCULADORA IMC'),
       ),
     );
-  } 
+  }
 }
+
