@@ -27,6 +27,12 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
       appBar: AppBar(
         title: const Text('CALCULADORA IMC'),
       ),
+      body: const Center(
+        child: Text('Corpo do texto'),
+      ),
+      floatingActionButton: FloatingActionButton_(
+        ch
+      ),
     );
   }
 }
