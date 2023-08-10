@@ -10,7 +10,7 @@ class CalculadoraIMC extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
          primaryColor: Colors.black
-      ),
+      ), 
       home: const TelaPrincipal(),
     );
   }
