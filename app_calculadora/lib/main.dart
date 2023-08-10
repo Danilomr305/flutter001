@@ -8,7 +8,9 @@ class CalculadoraIMC extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      thrme: ThemeData.dark(),
+      theme: ThemeData(
+
+      ),
       home: TelaPrincipal(),
     );
   }
