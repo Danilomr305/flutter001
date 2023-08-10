@@ -35,7 +35,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
         
         child: Icon(Icons.add),
       ),
-    );
+    ); 
   }
 }
 
