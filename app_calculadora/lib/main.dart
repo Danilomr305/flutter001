@@ -8,10 +8,14 @@ class CalculadoraIMC extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-         primaryColor: Colors.black
+    theme: ThemeData(
+      colorScheme: ColorScheme.fromSwatch().copyWith(
+        background: Colors.black26,
+        secondary: Colors.green,
       ),
-      home: const TelaPrincipal(),
+        textTheme: const TextTheme(bodyMedium: TextStyle(color: Colors.purple)),
+    ),
+    home: const TelaPrincipal(),
     );
   }
 }
@@ -24,7 +28,7 @@ class TelaPrincipal extends StatefulWidget {
 }
 
 class _TelaPrincipalState extends State<TelaPrincipal> {
-  @override 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -38,9 +42,8 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
         onPressed: () {  },
         child: const Icon(Icons.add),
       ),
-    ); 
+    );
   }
-}   
- 
- 
+}
+
 
