@@ -10,7 +10,7 @@ class CalculadoraIMC extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
          primaryColor: Colors.black
-      ), 
+      ),
       home: const TelaPrincipal(),
     );
   }
@@ -33,9 +33,10 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
       body: const Center(
         child: Text('Corpo do texto'),
       ),
-      floatingActionButton: const FloatingActionButton(
+      floatingActionButton: FloatingActionButton(
         
-        child: Icon(Icons.add),
+        onPressed: () {  },
+        child: const Icon(Icons.add),
       ),
     ); 
   }
