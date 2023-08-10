@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(CalculadoraIMC());
+void main() => runApp(const CalculadoraIMC());
 
 class CalculadoraIMC extends StatelessWidget {
   const CalculadoraIMC({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       theme: ThemeData(
-
+         primaryColor: Colors.black
       ),
-      home: TelaPrincipal(),
+      home: const TelaPrincipal(),
     );
   }
 }
