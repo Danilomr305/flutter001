@@ -9,7 +9,7 @@ class CalculadoraIMC extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     theme: ThemeData(
-      colorScheme: ColorScheme.fromSwatch().copyWith(
+       colorScheme: ColorScheme.fromSwatch().copyWith(
         primary: Colors.deepOrange,
         secondary: Colors.green,
       ),
