@@ -13,7 +13,6 @@ class CalculadoraIMC extends StatelessWidget {
       theme: ThemeData(
         primaryColor: const Color(0xFFff0000),
         scaffoldBackgroundColor: const Color(0xFF482356),
-        ac
         textTheme: const TextTheme(bodyMedium: TextStyle(color: Colors.white,),),
       ),
     // ignore: prefer_const_constructors
