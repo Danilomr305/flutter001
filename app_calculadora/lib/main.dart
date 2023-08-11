@@ -17,7 +17,7 @@ class CalculadoraIMC extends StatelessWidget {
     ),
     home: const TelaPrincipal(),
     );
-  }   
+  }    
 }
 
 class TelaPrincipal extends StatefulWidget {
