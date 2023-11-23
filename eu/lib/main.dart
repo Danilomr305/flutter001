@@ -13,7 +13,6 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'meu eu',
-      debugShowCheckedModeBanner: false,
       home: HomePage(),
       );
   }

@@ -3,25 +3,27 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
+  get mainAxisAlignment => null;
+
+  get msinAxisSize => null;
+
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
-        child: Scaffold(
-          // ignore: avoid_unnecessary_containers
-          body: Container(
-            child: 
-              const Center(
-                  child: Text(
-                    'Danilo Mr',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold
-                    ),
-                  ),
-              
-              ),
-          ),
+    return  const MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.grey,
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              CircleAvatar(
+                backgroundImage: AssetImage('imagens/perfil.jpg'),
+                radius: 70,
+              )
+            ],
+          )
         ),
+      ),
     );
   }
 }
